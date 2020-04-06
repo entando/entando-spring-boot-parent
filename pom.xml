@@ -45,6 +45,15 @@
 
     <properties>
         <github.organization>entando-k8s</github.organization>
+        <preDeploymentTestGroups></preDeploymentTestGroups>
+        <postDeploymentTestGroups></postDeploymentTestGroups>
+        <checkstyleConfigLocation>
+            https://raw.githubusercontent.com/entando-k8s/${project.parent.artifactId}/v${project.parent.version}/checkstyle.xml
+        </checkstyleConfigLocation>
+        <owaspSuppressionFileLocation>
+            https://raw.githubusercontent.com/entando-k8s/${project.parent.artifactId}/v${project.parent.version}/owasp-dependency-check-suppression.xml
+        </owaspSuppressionFileLocation>
+
         <!--dependencies -->
         <awaitility.version>4.0.1</awaitility.version>
         <postgresql.driver.version>42.2.8</postgresql.driver.version>
