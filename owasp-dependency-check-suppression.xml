@@ -51,6 +51,15 @@
     </suppress>
     <suppress>
         <notes><![CDATA[-->
+            Tomcat Embed
+        ]]></notes>
+        <gav regex="true">org\.apache\.tomcat\.embed:tomcat\-.*:9.0.30</gav>
+        <cve>CVE-2020-1938</cve>
+        <cve>CVE-2019-17569</cve>
+        <cve>CVE-2020-1935</cve>
+    </suppress>
+    <suppress>
+        <notes><![CDATA[-->
             spring-security-oauth*@5.2.2.RELEASE
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/org\.springframework\.security/spring\-security\-oauth2\-(jose|client|resource\-server|core)@.*$</packageUrl>
