@@ -59,7 +59,7 @@
         <awaitility.version>4.0.1</awaitility.version>
         <postgresql.driver.version>42.2.8</postgresql.driver.version>
         <spring-boot.version>2.2.4.RELEASE</spring-boot.version>
-        <spring.version>5.2.2.RELEASE</spring.version>
+        <spring.version>5.3.3.RELEASE</spring.version>
         <spring-security-oauth2.version>2.4.0.RELEASE</spring-security-oauth2.version>
         <jackson-databind.version>2.10.2</jackson-databind.version>
         <jackson-dataformat-yaml.version>2.9.9</jackson-dataformat-yaml.version>
