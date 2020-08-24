@@ -6,11 +6,11 @@
     <parent>
         <groupId>org.entando</groupId>
         <artifactId>entando-maven-root</artifactId>
-        <version>6.1.9</version>
+        <version>6.2.1</version>
     </parent>
     <groupId>org.entando</groupId>
     <artifactId>entando-spring-boot-parent</artifactId>
-    <version>6.1.0-SNAPSHOT</version>
+    <version>6.2.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
@@ -55,31 +55,12 @@
         </owaspSuppressionFileLocation>
 
         <!--dependencies -->
-        <entando.k8s.custom.model.version>6.0.65</entando.k8s.custom.model.version>
+        <entando.k8s.custom.model.version>6.1.0</entando.k8s.custom.model.version>
+        <postgresql.driver.version>42.2.13</postgresql.driver.version>
+        <spring-boot.version>2.2.8.RELEASE</spring-boot.version>
+        <tomcat-embed.version>9.0.37</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
-        <postgresql.driver.version>42.2.8</postgresql.driver.version>
-        <spring-boot.version>2.2.4.RELEASE</spring-boot.version>
-        <spring.version>5.2.2.RELEASE</spring.version>
-        <spring-security-oauth2.version>2.4.0.RELEASE</spring-security-oauth2.version>
-        <jackson-databind.version>2.10.2</jackson-databind.version>
-        <jackson-dataformat-yaml.version>2.9.9</jackson-dataformat-yaml.version>
-        <problem-spring-web.version>0.25.2</problem-spring-web.version>
-        <springdoc-openapi-ui.version>1.2.19</springdoc-openapi-ui.version>
-        <spring-security-oauth2-autoconfigure.version>2.2.4.RELEASE</spring-security-oauth2-autoconfigure.version>
-        <commons-collections4.version>4.4</commons-collections4.version>
-        <commons-io.version>2.6</commons-io.version>
-        <commons-compress.version>1.19</commons-compress.version>
-        <ojdbc8.version>19.3.0.0</ojdbc8.version>
-        <h2.version>1.4.199</h2.version>
-        <javassist.version>3.23.1-GA</javassist.version>
-        <fixture-factory.version>3.1.0</fixture-factory.version>
-        <assertj-core.version>3.4.1</assertj-core.version>
-        <spring-cloud-starter-contract-stub-runner.version>2.2.1.RELEASE
-        </spring-cloud-starter-contract-stub-runner.version>
-        <httpclient.version>4.5.2</httpclient.version>
-        <byte-buddy.version>1.9.16</byte-buddy.version>
-        <spring-security-test.version>5.2.1.RELEASE</spring-security-test.version>
-        <jaxb-api.version>2.3.1</jaxb-api.version>
+        <java.semver>0.9.0</java.semver>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -92,56 +73,58 @@
             </dependency>
             <!-- OWASP Fixes -->
             <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-web</artifactId>
-                <version>${spring.version}</version>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>2.13.2</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-config</artifactId>
-                <version>${spring.version}</version>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy</artifactId>
+                <version>1.9.16</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-core</artifactId>
-                <version>${spring.version}</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-core</artifactId>
+                <version>${tomcat-embed.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-oauth2-resource-server</artifactId>
-                <version>${spring.version}</version>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-el</artifactId>
+                <version>${tomcat-embed.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-oauth2-jose</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-oauth2-core</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.security</groupId>
-                <artifactId>spring-security-oauth2-client</artifactId>
-                <version>${spring.version}</version>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-websocket</artifactId>
+                <version>${tomcat-embed.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2 -->
             <dependency>
                 <groupId>org.springframework.security.oauth</groupId>
                 <artifactId>spring-security-oauth2</artifactId>
-                <version>${spring-security-oauth2.version}</version>
+                <version>2.4.0.RELEASE</version>
             </dependency>
-
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>${jackson-databind.version}</version>
+                <version>2.10.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>5.4.18.Final</version>
             </dependency>
 
-
+            <!-- Finish OWASP -->
             <dependency>
-                <groupId>org.entando.kubernetes</groupId>
+                <groupId>org.entando</groupId>
                 <artifactId>entando-k8s-custom-model</artifactId>
                 <version>${entando.k8s.custom.model.version}</version>
                 <exclusions>
@@ -159,25 +142,44 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.dataformat</groupId>
                 <artifactId>jackson-dataformat-yaml</artifactId>
-                <version>${jackson-dataformat-yaml.version}</version>
+                <version>2.9.9</version>
             </dependency>
+
 
             <!-- https://mvnrepository.com/artifact/org.zalando/problem-spring-web -->
             <dependency>
                 <groupId>org.zalando</groupId>
                 <artifactId>problem-spring-web</artifactId>
-                <version>${problem-spring-web.version}</version>
+                <version>0.25.2</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-ui</artifactId>
-                <version>${springdoc-openapi-ui.version}</version>
+                <version>1.2.32</version>
             </dependency>
+            <!--        <dependency>-->
+            <!--            <groupId>io.springfox</groupId>-->
+            <!--            <artifactId>springfox-bean-validators</artifactId>-->
+            <!--            <version>2.9.2</version>-->
+            <!--        </dependency>-->
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-security</artifactId>
+                <version>2.2.8.RELEASE</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.logging.log4j</groupId>
+                        <artifactId>log4j-to-slf4j</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.security.oauth.boot</groupId>
                 <artifactId>spring-security-oauth2-autoconfigure</artifactId>
-                <version>${spring-security-oauth2-autoconfigure.version}</version>
+                <version>2.2.8.RELEASE</version>
             </dependency>
 
             <dependency>
@@ -185,94 +187,103 @@
                 <artifactId>postgresql</artifactId>
                 <version>${postgresql.driver.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-collections4</artifactId>
-                <version>${commons-collections4.version}</version>
+                <version>4.4</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>${commons-io.version}</version>
+                <version>2.6</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-compress</artifactId>
-                <version>${commons-compress.version}</version>
+                <version>1.19</version>
             </dependency>
             <dependency>
                 <groupId>com.oracle.ojdbc</groupId>
                 <artifactId>ojdbc8</artifactId>
-                <version>${ojdbc8.version}</version>
+                <version>19.3.0.0</version>
                 <scope>compile</scope>
             </dependency>
+            <dependency>
+                <groupId>org.eclipse.jgit</groupId>
+                <artifactId>org.eclipse.jgit</artifactId>
+                <version>5.7.0.202003110725-r</version>
+            </dependency>
+
 
             <!-- Testing -->
             <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+                <version>2.2.8.RELEASE</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.junit.vintage</groupId>
+                        <artifactId>junit-vintage-engine</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
-                <version>${h2.version}</version>
-                <scope>test</scope>
+                <version>1.4.199</version>
+                <scope>runtime</scope>
             </dependency>
             <dependency>
                 <!-- update Hibernate dependency on Javassist
                         to 3.23.1 for Java 11 compatibility -->
                 <groupId>org.javassist</groupId>
                 <artifactId>javassist</artifactId>
-                <version>${javassist.version}</version>
+                <version>3.23.1-GA</version>
             </dependency>
             <dependency>
                 <groupId>br.com.six2six</groupId>
                 <artifactId>fixture-factory</artifactId>
-                <version>${fixture-factory.version}</version>
+                <version>3.1.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.assertj</groupId>
                 <artifactId>assertj-core</artifactId>
-                <version>${assertj-core.version}</version>
+                <version>3.4.1</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
-                <version>${spring-cloud-starter-contract-stub-runner.version}</version>
+                <version>2.2.1.RELEASE</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
-                <version>${jaxb-api.version}</version>
+                <version>2.3.1</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>${httpclient.version}</version>
+                <version>4.5.2</version>
             </dependency>
             <dependency>
                 <groupId>org.awaitility</groupId>
                 <artifactId>awaitility</artifactId>
                 <version>${awaitility.version}</version>
-                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-test</artifactId>
-                <version>${spring-security-test.version}</version>
+                <version>5.2.1.RELEASE</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>net.bytebuddy</groupId>
-                <artifactId>byte-buddy</artifactId>
-                <version>${byte-buddy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.SR1</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <groupId>com.github.zafarkhaja</groupId>
+                <artifactId>java-semver</artifactId>
+                <version>${java.semver}</version>
             </dependency>
 
         </dependencies>
