@@ -22,18 +22,8 @@
         this version of Quarkus has been linked to certain versions of K8S. The client only needs to upgrade to
         later versions of the K8S to avoid these vulnerabilities
       ]]></notes>
-        <gav regex="true">io\.quarkus:quarkus-kubernetes-client:1\.2\.0\.Final</gav>
-        <cve>CVE-2015-7528</cve>
-        <cve>CVE-2019-11254</cve>
-        <cve>CVE-2018-1002105</cve>
-        <cve>CVE-2019-1002100</cve>
-        <cve>CVE-2019-11246</cve>
-        <cve>CVE-2019-11248</cve>
-        <cve>CVE-2019-11249</cve>
-        <cve>CVE-2019-11250</cve>
-        <cve>CVE-2019-11253</cve>
-        <cve>CVE-2019-9946</cve>
-        <cve>CVE-2020-8552</cve>
+        <gav>io.quarkus:quarkus-kubernetes-client:1.2.0.Final</gav>
+        <cpe>cpe:/a:kubernetes:kubernetes</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
@@ -56,23 +46,17 @@
         <notes><![CDATA[-->
             spring-security-*@5.2.2.RELEASE
         ]]></notes>
-        <packageUrl regex="true">^pkg:maven/org\.springframework\.security/spring\-security\-(web|jwt|core|config)@.*$</packageUrl>
+        <packageUrl regex="true">^pkg:maven/org\.springframework\.security/spring\-security\-(web|jwt|core|config)@.*$
+        </packageUrl>
         <cve>CVE-2018-1258</cve>
-    </suppress>
-    <suppress>
-        <notes><![CDATA[-->
-            Tomcat Embed
-        ]]></notes>
-        <gav regex="true">org\.apache\.tomcat\.embed:tomcat\-.*:9.0.30</gav>
-        <cve>CVE-2020-1938</cve>
-        <cve>CVE-2019-17569</cve>
-        <cve>CVE-2020-1935</cve>
     </suppress>
     <suppress>
         <notes><![CDATA[-->
             spring-security-oauth*@5.2.2.RELEASE
         ]]></notes>
-        <packageUrl regex="true">^pkg:maven/org\.springframework\.security/spring\-security\-oauth2\-(jose|client|resource\-server|core)@.*$</packageUrl>
+        <packageUrl regex="true">
+            ^pkg:maven/org\.springframework\.security/spring\-security\-oauth2\-(jose|client|resource\-server|core)@.*$
+        </packageUrl>
         <cve>CVE-2018-1258</cve>
     </suppress>
 </suppressions>
