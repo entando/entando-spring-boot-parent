@@ -121,6 +121,12 @@
                 <artifactId>hibernate-core</artifactId>
                 <version>5.4.18.Final</version>
             </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>1.27</version>
+            </dependency>
+
 
             <!-- Finish OWASP -->
             <dependency>
