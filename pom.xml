@@ -57,10 +57,10 @@
         <!--dependencies -->
         <entando.k8s.custom.model.version>6.1.0</entando.k8s.custom.model.version>
         <postgresql.driver.version>42.2.13</postgresql.driver.version>
-        <spring-boot.version>2.2.8.RELEASE</spring-boot.version>
         <tomcat-embed.version>9.0.37</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
         <java.semver>0.9.0</java.semver>
+        <spring-boot.version>2.2.10.RELEASE</spring-boot.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -167,7 +167,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
-                <version>2.2.8.RELEASE</version>
+                <version>${spring-boot.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.apache.logging.log4j</groupId>
@@ -179,7 +179,7 @@
             <dependency>
                 <groupId>org.springframework.security.oauth.boot</groupId>
                 <artifactId>spring-security-oauth2-autoconfigure</artifactId>
-                <version>2.2.8.RELEASE</version>
+                <version>${spring-boot.version}</version>
             </dependency>
 
             <dependency>
@@ -220,7 +220,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
-                <version>2.2.8.RELEASE</version>
+                <version>${spring-boot.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.junit.vintage</groupId>
@@ -285,7 +285,11 @@
                 <artifactId>java-semver</artifactId>
                 <version>${java.semver}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>1.27</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
