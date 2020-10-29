@@ -6,7 +6,8 @@
     <parent>
         <groupId>org.entando</groupId>
         <artifactId>entando-maven-root</artifactId>
-        <version>6.2.3</version>
+        <version>6.2.4</version>
+        <relativePath/>
     </parent>
     <groupId>org.entando</groupId>
     <artifactId>entando-spring-boot-parent</artifactId>
