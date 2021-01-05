@@ -27,19 +27,9 @@
     </suppress>
     <suppress>
         <notes><![CDATA[
-        Not much we can do about this one except for wait for Keycloak 8. We can only update the client if the
-        server is updated.
-      ]]></notes>
-        <gav regex="true">org\.keycloak:keycloak-.*:7\.0\.1</gav>
-        <cve>CVE-2019-14832</cve>
-        <cve>CVE-2019-14910</cve>
-        <cve>CVE-2019-14909</cve>
-    </suppress>
-    <suppress>
-        <notes><![CDATA[
    file name: nimbus-jose-jwt-7.8.1.jar
    ]]></notes>
-        <packageUrl regex="true">^pkg:maven/com\.nimbusds/nimbus\-jose\-jwt@.*$</packageUrl>
+        <gav>com.nimbusds:nimbus-jose-jwt:7.8.1</gav>
         <cve>CVE-2019-17195</cve>
     </suppress>
     <suppress>
@@ -58,5 +48,17 @@
             ^pkg:maven/org\.springframework\.security/spring\-security\-oauth2\-(jose|client|resource\-server|core)@.*$
         </packageUrl>
         <cve>CVE-2018-1258</cve>
+    </suppress>
+    <suppress>
+        <notes><![CDATA[-->
+            nothing new available
+        ]]></notes>
+        <packageUrl regex="true">
+            ^pkg:maven/com\.nimbusds/lang-tag@.*$
+        </packageUrl>
+        <cve>CVE-2020-29242</cve>
+        <cve>CVE-2020-29243</cve>
+        <cve>CVE-2020-29244</cve>
+        <cve>CVE-2020-29245</cve>
     </suppress>
 </suppressions>
