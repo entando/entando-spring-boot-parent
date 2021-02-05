@@ -57,7 +57,7 @@
         </owaspSuppressionFileLocation>
 
         <!--dependencies -->
-        <entando.k8s.custom.model.version>6.1.0</entando.k8s.custom.model.version>
+        <entando-k8s-custom-model.version>6.3.0</entando-k8s-custom-model.version>
         <postgresql.driver.version>42.2.13</postgresql.driver.version>
         <tomcat-embed.version>9.0.40</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
@@ -127,7 +127,7 @@
             <dependency>
                 <groupId>org.entando</groupId>
                 <artifactId>entando-k8s-custom-model</artifactId>
-                <version>${entando.k8s.custom.model.version}</version>
+                <version>${entando-k8s-custom-model.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.slf4j</groupId>
@@ -136,6 +136,10 @@
                     <exclusion>
                         <groupId>org.jboss.slf4j</groupId>
                         <artifactId>slf4j-jboss-logging</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>jul-to-slf4j</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
