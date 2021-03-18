@@ -68,22 +68,4 @@
         <cve>CVE-2020-29244</cve>
         <cve>CVE-2020-29245</cve>
     </suppress>
-    <suppress>
-        <notes><![CDATA[-->
-            quarkus deps
-        ]]></notes>
-        <packageUrl regex="true">
-            ^pkg:maven/io\.quarkus/quarkus-.*@.*$
-        </packageUrl>
-        <cve>CVE-2020-10693</cve>
-    </suppress>
-    <suppress>
-        <notes><![CDATA[-->
-            arc
-        ]]></notes>
-        <packageUrl regex="true">
-            ^pkg:maven/io\.quarkus\.arc/arc@.*$
-        </packageUrl>
-        <cve>CVE-2020-10693</cve>
-    </suppress>
 </suppressions>
