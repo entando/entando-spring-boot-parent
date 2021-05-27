@@ -41,20 +41,12 @@
     </suppress>
     <suppress>
         <notes><![CDATA[-->
-            spring-security-*@5.2.2.RELEASE
-        ]]></notes>
-        <packageUrl regex="true">^pkg:maven/org\.springframework\.security/spring\-security\-(web|jwt|core|config)@.*$
-        </packageUrl>
-        <cve>CVE-2018-1258</cve>
-    </suppress>
-    <suppress>
-        <notes><![CDATA[-->
-            spring-security-oauth*@5.2.2.RELEASE
+            spring-security-jwt*@1.1.1.RELEASE
         ]]></notes>
         <packageUrl regex="true">
-            ^pkg:maven/org\.springframework\.security/spring\-security\-oauth2\-(jose|client|resource\-server|core)@.*$
+            ^pkg:maven/org\.springframework\.security/spring\-security\-jwt@.*$
         </packageUrl>
-        <cve>CVE-2018-1258</cve>
+        <cve>CVE-2021-22112</cve>
     </suppress>
     <suppress>
         <notes><![CDATA[-->
