@@ -59,10 +59,10 @@
         <!--dependencies -->
         <entando-k8s-custom-model.version>6.3.0</entando-k8s-custom-model.version>
         <postgresql.driver.version>42.2.13</postgresql.driver.version>
-        <tomcat-embed.version>9.0.43</tomcat-embed.version>
+        <tomcat-embed.version>9.0.50</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
         <java.semver>0.9.0</java.semver>
-        <spring-boot.version>2.4.6</spring-boot.version>
+        <spring-boot.version>2.5.3</spring-boot.version>
         <fabric8.version>4.7.0</fabric8.version>
         <spring-security-oauth2-autoconfigure.version>2.4.2</spring-security-oauth2-autoconfigure.version>
     </properties>
