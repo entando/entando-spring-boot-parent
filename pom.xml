@@ -50,10 +50,10 @@
         <postDeploymentTestGroups></postDeploymentTestGroups>
         <skipLicenseDownload>false</skipLicenseDownload>
         <checkstyleConfigLocation>
-            https://raw.githubusercontent.com/entando/entando-spring-boot-parent/v6.4.0/checkstyle.xml
+            https://raw.githubusercontent.com/entando/${project.parent.artifactId}/v${project.parent.version}/checkstyle.xml
         </checkstyleConfigLocation>
         <owaspSuppressionFileLocation>
-            https://raw.githubusercontent.com/entando/entando-spring-boot-parent/v6.4.0/owasp-dependency-check-suppression.xml
+            https://raw.githubusercontent.com/entando/${project.parent.artifactId}/v${project.parent.version}/owasp-dependency-check-suppression.xml
         </owaspSuppressionFileLocation>
 
         <!--dependencies -->
