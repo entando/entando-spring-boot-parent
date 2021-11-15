@@ -34,6 +34,13 @@
     </suppress>
     <suppress>
         <notes><![CDATA[
+        A false positives relative to K8S's client that has nothing to do with the imported one by Fabric8
+      ]]></notes>
+        <cpe>cpe:/a:kubernetes:java</cpe>
+        <cve>CVE-2021-25738</cve>
+    </suppress>
+    <suppress>
+        <notes><![CDATA[
    file name: nimbus-jose-jwt-7.8.1.jar
    ]]></notes>
         <gav>com.nimbusds:nimbus-jose-jwt:7.8.1</gav>
