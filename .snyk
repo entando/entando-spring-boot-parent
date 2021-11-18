@@ -4,4 +4,4 @@ version: v1.19.0
 ignore:
   SNYK-JAVA-CHQOSLOGBACK-1726923:
     - '*':
-        reason: 'This vulnerability is currently under analysis and we will be fixed soon.'
+        reason: 'This vulnerability is currently under analysis to check if it is a false positive.'
