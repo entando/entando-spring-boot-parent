@@ -4,4 +4,7 @@ version: v1.19.0
 ignore:
   SNYK-JAVA-CHQOSLOGBACK-1726923:
     - '*':
-        reason: 'This vulnerability is currently under analysis to check if it is a false positive.'
+        reason: '.'
+  SNYK-JAVA-COMH2DATABASE-1769238:
+    - '*':
+        reason: '.'
