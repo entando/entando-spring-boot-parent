@@ -53,7 +53,7 @@
             https://raw.githubusercontent.com/entando/${project.parent.artifactId}/v${project.parent.version}/checkstyle.xml
         </checkstyleConfigLocation>
         <owaspSuppressionFileLocation>
-            https://raw.githubusercontent.com/entando/${project.parent.artifactId}/v${project.parent.version}/owasp-dependency-check-suppression.xml
+            owasp-dependency-check-suppression.xml
         </owaspSuppressionFileLocation>
 
         <!--dependencies -->
@@ -63,8 +63,8 @@
         <awaitility.version>4.0.1</awaitility.version>
         <java.semver.version>0.9.0</java.semver.version>
         <fabric8.version>4.10.3</fabric8.version>
-        <spring-boot.version>2.5.6</spring-boot.version>
-        <spring-security-oauth2-autoconfigure.version>2.5.6</spring-security-oauth2-autoconfigure.version>
+        <spring-boot.version>2.5.7</spring-boot.version>
+        <spring-security-oauth2-autoconfigure.version>2.5.7</spring-security-oauth2-autoconfigure.version>
         <evo-inflector.version>1.2.2</evo-inflector.version>
         <problem-spring-web-starter.version>0.25.2</problem-spring-web-starter.version>
         <log4j-to-slf4j.version>2.13.2</log4j-to-slf4j.version>
@@ -77,11 +77,11 @@
         <log4j-api.version>2.13.2</log4j-api.version>
         <byte-buddy.version>1.9.16</byte-buddy.version>
         <spring-security-oauth2.version>2.5.0.RELEASE</spring-security-oauth2.version>
-        <jackson-databind.version>2.10.5.1</jackson-databind.version>
+        <jackson-databind.version>2.12.6</jackson-databind.version>
         <hibernate-core.version>5.4.28.Final</hibernate-core.version>
         <jackson-dataformat-yaml.version>2.9.9</jackson-dataformat-yaml.version>
         <problem-spring-web.version>0.25.2</problem-spring-web.version>
-        <springdoc-openapi-ui.version>1.5.11</springdoc-openapi-ui.version>
+        <springdoc-openapi-ui.version>1.6.0</springdoc-openapi-ui.version>
         <commons-compress.version>1.21</commons-compress.version>
         <ojdbc8.version>19.3.0.0</ojdbc8.version>
         <org.eclipse.jgit.version>5.7.0.202003110725-r</org.eclipse.jgit.version>
