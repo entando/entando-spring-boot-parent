@@ -68,4 +68,17 @@
         <cve>CVE-2020-29245</cve>
         <cve>CVE-2020-23171</cve>
     </suppress>
+    <suppress>
+        <cve>CVE-2020-8554</cve>
+        <cve>CVE-2021-23463</cve>
+        <cve>CVE-2021-44832</cve>
+        <cve>CVE-2021-44228</cve>
+        <cve>CVE-2021-45105</cve>
+        <cve>CVE-2021-45046</cve>
+        <cve>CVE-2021-42550</cve>
+        <cve>CVE-2020-8554</cve>
+        <cve>CVE-2020-8570</cve>
+        <cve>CVE-2021-25738</cve>
+        <cve>CVE-2021-22112</cve>
+    </suppress>
 </suppressions>
