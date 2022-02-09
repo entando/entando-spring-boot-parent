@@ -58,7 +58,7 @@
 
         <!--dependencies -->
         <entando-k8s-custom-model.version>6.3.0</entando-k8s-custom-model.version>
-        <postgresql.driver.version>42.2.13</postgresql.driver.version>
+        <postgresql.driver.version>42.2.25</postgresql.driver.version>
         <tomcat-embed.version>9.0.54</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
         <java.semver.version>0.9.0</java.semver.version>
@@ -92,6 +92,7 @@
         <spring-security-test.version>5.2.1.RELEASE</spring-security-test.version>
         <snakeyaml.version>1.27</snakeyaml.version>
         <spring-cloud-dependencies.version>Finchley.SR1</spring-cloud-dependencies.version>
+        <spring-core.version>5.3.14</spring-core.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -339,6 +340,11 @@
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk15on</artifactId>
                 <version>${bcprov-jdk15on.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring-core.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -591,6 +597,11 @@
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
             <version>${bcprov-jdk15on.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring-core.version}</version>
         </dependency>
     </dependencies>
     <build>
