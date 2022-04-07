@@ -92,7 +92,8 @@
         <spring-security-test.version>5.2.1.RELEASE</spring-security-test.version>
         <snakeyaml.version>1.27</snakeyaml.version>
         <spring-cloud-dependencies.version>Finchley.SR1</spring-cloud-dependencies.version>
-        <spring-core.version>5.3.14</spring-core.version>
+        <spring-core.version>5.3.18</spring-core.version>
+        <spring-beans.version>5.3.18</spring-beans.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -345,6 +346,11 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
                 <version>${spring-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring-beans.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
