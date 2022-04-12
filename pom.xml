@@ -45,7 +45,7 @@
 
 
     <properties>
-        <github.organization>entando-k8s</github.organization>
+        <github.organization>entando</github.organization>
         <preDeploymentTestGroups></preDeploymentTestGroups>
         <postDeploymentTestGroups></postDeploymentTestGroups>
         <skipLicenseDownload>false</skipLicenseDownload>
