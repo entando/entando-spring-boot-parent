@@ -23,3 +23,9 @@ ignore:
   SNYK-JAVA-ORGSPRINGFRAMEWORK-2434828:
     - '*':
         reason: '.'
+  SNYK-JAVA-ORGSPRINGFRAMEWORKSECURITYOAUTH-2772728:
+    - '*':
+        reason: '.'
+  SNYK-JAVA-ORGSPRINGFRAMEWORK-2689634:
+    - '*':
+        reason: '.'
