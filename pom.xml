@@ -63,7 +63,7 @@
         <awaitility.version>4.0.1</awaitility.version>
         <java.semver.version>0.9.0</java.semver.version>
         <fabric8.version>4.10.3</fabric8.version>
-        <spring-boot.version>2.5.7</spring-boot.version>
+        <spring-boot.version>2.5.13</spring-boot.version>
         <spring-security-oauth2-autoconfigure.version>2.5.7</spring-security-oauth2-autoconfigure.version>
         <evo-inflector.version>1.2.2</evo-inflector.version>
         <problem-spring-web-starter.version>0.25.2</problem-spring-web-starter.version>
@@ -76,7 +76,7 @@
         <fixture-factory.version>3.1.0</fixture-factory.version>
         <log4j-api.version>2.13.2</log4j-api.version>
         <byte-buddy.version>1.9.16</byte-buddy.version>
-        <spring-security-oauth2.version>2.5.0.RELEASE</spring-security-oauth2.version>
+        <spring-security-oauth2.version>2.5.2.RELEASE</spring-security-oauth2.version>
         <jackson-databind.version>2.12.6</jackson-databind.version>
         <hibernate-core.version>5.4.28.Final</hibernate-core.version>
         <jackson-dataformat-yaml.version>2.9.9</jackson-dataformat-yaml.version>
