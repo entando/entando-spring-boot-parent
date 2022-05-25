@@ -92,7 +92,9 @@
         <spring-security-test.version>5.2.1.RELEASE</spring-security-test.version>
         <snakeyaml.version>1.27</snakeyaml.version>
         <spring-cloud-dependencies.version>Finchley.SR1</spring-cloud-dependencies.version>
-        <spring-core.version>5.3.14</spring-core.version>
+        <spring-core.version>5.3.20</spring-core.version>
+        <spring-security.version>5.5.7</spring-security.version>
+        
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -335,6 +337,31 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
                 <version>${spring-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-expression</artifactId>
+                <version>${spring-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-web</artifactId>
+                <version>${spring-security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-crypto</artifactId>
+                <version>${spring-security.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security.oauth</groupId>
