@@ -93,8 +93,8 @@
         <snakeyaml.version>1.27</snakeyaml.version>
         <spring-cloud-dependencies.version>Finchley.SR1</spring-cloud-dependencies.version>
         <spring-core.version>5.3.20</spring-core.version>
+        <spring-beans.version>5.3.18</spring-beans.version>
         <spring-security.version>5.5.7</spring-security.version>
-        
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -136,6 +136,11 @@
                 <groupId>org.apache.tomcat.embed</groupId>
                 <artifactId>tomcat-embed-websocket</artifactId>
                 <version>${tomcat-embed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${spring-security-oauth2.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
@@ -195,6 +200,11 @@
                         <artifactId>log4j-to-slf4j</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security.oauth.boot</groupId>
+                <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+                <version>${spring-security-oauth2-autoconfigure.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.postgresql</groupId>
