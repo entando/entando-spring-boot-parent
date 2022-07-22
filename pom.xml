@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.entando</groupId>
         <artifactId>entando-maven-root</artifactId>
-        <version>7.1.0-ENG-3143-PR-9</version>
+        <version>7.1.0-ENG-3339-PR-11</version>
         <relativePath/>
     </parent>
     <groupId>org.entando</groupId>
@@ -52,10 +52,6 @@
         <checkstyleConfigLocation>
             https://raw.githubusercontent.com/entando-k8s/entando-spring-boot-parent/ACTIVE-CHECKSTYLE/checkstyle.xml
         </checkstyleConfigLocation>
-        <owaspSuppressionFileLocation>
-            owasp-dependency-check-suppression.xml
-        </owaspSuppressionFileLocation>
-
         <!--dependencies -->
         <entando-k8s-custom-model.version>6.3.0</entando-k8s-custom-model.version>
         <postgresql.driver.version>42.2.25</postgresql.driver.version>
