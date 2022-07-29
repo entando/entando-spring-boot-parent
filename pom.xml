@@ -77,7 +77,7 @@
         <log4j-api.version>2.13.2</log4j-api.version>
         <byte-buddy.version>1.9.16</byte-buddy.version>
         <spring-security-oauth2.version>2.5.2.RELEASE</spring-security-oauth2.version>
-        <jackson-databind.version>2.12.6</jackson-databind.version>
+        <jackson-databind.version>2.12.6.1</jackson-databind.version>
         <hibernate-core.version>5.4.28.Final</hibernate-core.version>
         <jackson-dataformat-yaml.version>2.9.9</jackson-dataformat-yaml.version>
         <problem-spring-web.version>0.25.2</problem-spring-web.version>
