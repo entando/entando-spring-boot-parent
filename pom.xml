@@ -11,7 +11,7 @@
     </parent>
     <groupId>org.entando</groupId>
     <artifactId>entando-spring-boot-parent</artifactId>
-    <version>7.1.0</version>
+    <version>7.1.1</version>
 
     <packaging>pom</packaging>
 
@@ -58,7 +58,7 @@
 
         <!--dependencies -->
         <entando-k8s-custom-model.version>6.3.0</entando-k8s-custom-model.version>
-        <postgresql.driver.version>42.2.25</postgresql.driver.version>
+        <postgresql.driver.version>42.2.26</postgresql.driver.version>
         <tomcat-embed.version>9.0.54</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
         <java.semver.version>0.9.0</java.semver.version>
