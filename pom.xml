@@ -11,7 +11,7 @@
     </parent>
     <groupId>org.entando</groupId>
     <artifactId>entando-spring-boot-parent</artifactId>
-    <version>7.2.0-SNAPSHOT</version>
+    <version>7.2.1</version>
 
     <packaging>pom</packaging>
 
@@ -59,7 +59,7 @@
         <!--dependencies -->
         <entando-k8s-custom-model.version>6.3.0</entando-k8s-custom-model.version>
         <postgresql.driver.version>42.2.26</postgresql.driver.version>
-        <tomcat-embed.version>9.0.69</tomcat-embed.version>
+        <tomcat-embed.version>9.0.72</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
         <java.semver.version>0.9.0</java.semver.version>
         <fabric8.version>4.10.3</fabric8.version>
@@ -70,14 +70,14 @@
         <log4j-to-slf4j.version>2.13.2</log4j-to-slf4j.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <commons-io.version>2.8.0</commons-io.version>
-        <bcprov-jdk15on.version>1.67</bcprov-jdk15on.version>
+        <bcprov-jdk15on.version>1.69</bcprov-jdk15on.version>
         <h2.version>1.4.199</h2.version>
         <javassist.version>3.23.1-GA</javassist.version>
         <fixture-factory.version>3.1.0</fixture-factory.version>
         <log4j-api.version>2.13.2</log4j-api.version>
         <byte-buddy.version>1.9.16</byte-buddy.version>
         <spring-security-oauth2.version>2.5.2.RELEASE</spring-security-oauth2.version>
-        <jackson-databind.version>2.12.6.1</jackson-databind.version>
+        <jackson-databind.version>2.12.7.1</jackson-databind.version>
         <hibernate-core.version>5.4.28.Final</hibernate-core.version>
         <jackson-dataformat-yaml.version>2.9.9</jackson-dataformat-yaml.version>
         <problem-spring-web.version>0.25.2</problem-spring-web.version>
@@ -92,7 +92,7 @@
         <spring-security-test.version>5.2.1.RELEASE</spring-security-test.version>
         <snakeyaml.version>1.27</snakeyaml.version>
         <spring-cloud-dependencies.version>Finchley.SR1</spring-cloud-dependencies.version>
-        <spring-core.version>5.3.20</spring-core.version>
+        <spring-core.version>5.3.27</spring-core.version>
         <spring-beans.version>5.3.18</spring-beans.version>
         <spring-security.version>5.5.7</spring-security.version>
     </properties>
