@@ -11,7 +11,7 @@
     </parent>
     <groupId>org.entando</groupId>
     <artifactId>entando-spring-boot-parent</artifactId>
-    <version>7.2.1</version>
+    <version>7.3.0</version>
 
     <packaging>pom</packaging>
 
@@ -58,12 +58,12 @@
 
         <!--dependencies -->
         <entando-k8s-custom-model.version>6.3.0</entando-k8s-custom-model.version>
-        <postgresql.driver.version>42.2.26</postgresql.driver.version>
-        <tomcat-embed.version>9.0.72</tomcat-embed.version>
+        <postgresql.driver.version>42.3.8</postgresql.driver.version>
+        <tomcat-embed.version>9.0.81</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
         <java.semver.version>0.9.0</java.semver.version>
         <fabric8.version>4.10.3</fabric8.version>
-        <spring-boot.version>2.5.14</spring-boot.version>
+        <spring-boot.version>2.5.15</spring-boot.version>
         <spring-security-oauth2-autoconfigure.version>2.5.7</spring-security-oauth2-autoconfigure.version>
         <evo-inflector.version>1.2.2</evo-inflector.version>
         <problem-spring-web-starter.version>0.25.2</problem-spring-web-starter.version>
