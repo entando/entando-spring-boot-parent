@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.entando</groupId>
         <artifactId>entando-maven-root</artifactId>
-        <version>7.2.0-ENG-4226-PR-18</version>
+        <version>7.4.0-ENG-5324-PR-55</version>
         <relativePath/>
     </parent>
     <groupId>org.entando</groupId>
     <artifactId>entando-spring-boot-parent</artifactId>
-    <version>7.3.0</version>
+    <version>7.4.0</version>
 
     <packaging>pom</packaging>
 
@@ -57,7 +57,7 @@
         </owaspSuppressionFileLocation>
 
         <!--dependencies -->
-        <entando-k8s-custom-model.version>6.3.0</entando-k8s-custom-model.version>
+        <entando-k8s-custom-model.version>7.4.0-ENG-5324-PR-91</entando-k8s-custom-model.version>
         <postgresql.driver.version>42.3.8</postgresql.driver.version>
         <tomcat-embed.version>9.0.81</tomcat-embed.version>
         <awaitility.version>4.0.1</awaitility.version>
