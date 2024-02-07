@@ -86,7 +86,7 @@
         <ojdbc8.version>19.3.0.0</ojdbc8.version>
         <org.eclipse.jgit.version>5.7.0.202003110725-r</org.eclipse.jgit.version>
         <assertj-core.version>3.4.1</assertj-core.version>
-        <spring-cloud-starter-contract-stub-runner.version>2.2.1.RELEASE</spring-cloud-starter-contract-stub-runner.version>
+        <spring-cloud-starter-contract-stub-runner.version>4.0.2</spring-cloud-starter-contract-stub-runner.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
         <httpclient.version>4.5.13</httpclient.version>
         <spring-security-test.version>5.2.1.RELEASE</spring-security-test.version>
