@@ -14,7 +14,6 @@
     <version>7.5.0</version>
 
     <packaging>pom</packaging>
-
     <name>Entando Spring Boot Parent</name>
     <description>Entando Spring Boot Parent</description>
 
