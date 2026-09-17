@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.entando</groupId>
         <artifactId>entando-maven-root</artifactId>
-        <version>7.2.0</version>
+        <version>7.5.1</version>
         <relativePath/>
     </parent>
     <groupId>org.entando</groupId>
     <artifactId>entando-spring-boot-parent</artifactId>
-    <version>7.5.0</version>
+    <version>7.5.1</version>
 
     <packaging>pom</packaging>
     <name>Entando Spring Boot Parent</name>
@@ -31,8 +31,8 @@
     </organization>
     <repositories>
         <repository>
-            <id>jx-releases</id>
-            <url>https://nexus-jx.apps.serv.run/repository/maven-releases/</url>
+            <id>nexus-entando</id>
+            <url>https://dependencies.entando.org/repository/maven-releases/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -59,7 +59,7 @@
         </owaspSuppressionFileLocation>
 
         <!--dependencies -->
-        <entando-k8s-custom-model.version>7.5.0</entando-k8s-custom-model.version>
+        <entando-k8s-custom-model.version>7.5.1</entando-k8s-custom-model.version>
         <postgresql.driver.version>42.7.4</postgresql.driver.version>
         <tomcat-embed.version>10.1.47</tomcat-embed.version>
         <awaitility.version>4.2.2</awaitility.version>
@@ -407,8 +407,8 @@ if [ -n "$(git rev-list $(git branch --show-current)..origin/master)" ]; then
   exit 1
 fi
 cd $(git rev-parse --show-toplevel)
-MODEL_VERSION=$(curl -v -X GET "https://nexus-jx.apps.serv.run/service/rest/v1/search/assets/download?sort=version&repository=maven-releases&maven.groupId=org.entando&maven.artifactId=entando-k8s-custom-model" -H "accept: application/json" 2>&1 | awk -F "/" '/Location/ {print $9}')
-COMMON_VERSION=$(curl -v -X GET "https://nexus-jx.apps.serv.run/service/rest/v1/search/assets/download?sort=version&repository=maven-releases&maven.groupId=org.entando&maven.artifactId=entando-k8s-operator-common" -H "accept: application/json" 2>&1 | awk -F "/" '/Location/ {print $9}')
+MODEL_VERSION=$(curl -v -X GET "https://dependencies.entando.org/service/rest/v1/search/assets/download?sort=version&repository=maven-releases&maven.groupId=org.entando&maven.artifactId=entando-k8s-custom-model" -H "accept: application/json" 2>&1 | awk -F "/" '/Location/ {print $9}')
+COMMON_VERSION=$(curl -v -X GET "https://dependencies.entando.org/service/rest/v1/search/assets/download?sort=version&repository=maven-releases&maven.groupId=org.entando&maven.artifactId=entando-k8s-operator-common" -H "accept: application/json" 2>&1 | awk -F "/" '/Location/ {print $9}')
 sed -i "s:\(.*<entando-k8s-custom-model.version>\)\(.*\)\(</entando-k8s-custom-model.version>.*\):\1${MODEL_VERSION}\3:g" pom.xml
 git add pom.xml
 mvn clean verify -DpreDeploymentTestGroups=in-process -Ppre-deployment-verification
